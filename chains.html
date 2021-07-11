@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangles</title>
+    <style>
+    body
+    {
+        background-color: black;
+        color:white;
+        font-family: sans-serif;
+    }
+    span
+    {
+        margin-left: 100px;
+        padding-bottom: 10px;
+    }
+    nav
+    {
+        margin-top: 15px;
+    }
+     #logo1
+     {
+        font-size: 2em;
+        color:yellow;
+        margin-left: 50px;
+    }
+    #logo2
+    {
+        font-size: 2em;
+        margin-left: 100px;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+    #title
+    {
+        border-bottom:2px solid gray;
+            padding:30px 30px 10px 30px;
+        }
+
+        .navigation{
+                height:500px;
+                display: flex;
+                box-sizing: border-box;
+                flex-direction: row;
+                
+            }
+            .left_nav{
+                display:flex;
+                flex-basis:20%;
+                
+                
+                 
+            }
+            li{
+                padding:10px;
+
+                background-color:lightgray;
+                margin:5px;
+                color:blue;
+                border-radius: 0 10px 10px 0;
+            }
+            .centre_nav{
+                display:flex;
+                flex-basis:60%;
+                background-color:gray;
+                
+            }
+            #main_img{
+                margin-top: 20px;
+                margin-left: 5px;
+                border:4px solid red;
+            }
+
+            .prod_det{
+                width:400px;
+                height:450px;
+                border:4px solid black;
+                margin-left:10px;
+                margin-top:20px;
+                margin-right: 10px;
+                text-align: center;
+                color:black;
+            }
+            h2{
+                color:red;
+            }
+            h3{
+                color: blue;
+            }
+            button{
+                padding:15px;
+                background-color: brown;
+                color:white;
+                border-radius: 10px 10px 10px 10px;
+            }
+            .right_nav{
+                display:flex;
+                flex-basis:20%;
+                 }
+                 .acct_det{
+                     height:200px;
+                     width:100%;
+                     text-align: center;
+                     margin-top: 100px;
+                 }
+
+        </style>
+</head>
+<body>
+    <div id="title">
+        <div id="logo1">Sparkles</div>
+        <div id="logo2">Jewellery</div>
+        <nav>
+            <span><a href="jewellery.html">> Home</a></span>
+            <span>> About Us</span>
+            <span>><a href="goldcollections.html"> Collections</a></span>
+            <span>> Services</span>
+            <span>> Blog</span>
+            <span>> Contact Us</span>
+        </nav>
+        </div>
+        <div class="navigation">
+            <div class="left_nav"> 
+                <ul type="none">
+                    <li>Gold</li>
+                    <li>Diamond</li>
+                    <li>Platinum</li>
+                    <li>Silver</li>
+                    <li>Antique</li>
+                    <li>Fire and Earth</li>
+                    <li>Wedding Collections</li>
+                    <li>Co-operate gifts</li>
+                </ul>
+                </div>
+                <div class="centre_nav">
+                    <img src="pexels-cottonbro-6604737.jpg" width="350px" height="450px" id="main_img">
+                    <div class="prod_det">
+                      <h2>Product code: SJ04</h2><br>
+                      <h3>Gold Chains</h3><br>
+                      Purity       : 22k <br><br>
+                      Price Rs     : 80998<br><br>
+                      No. of piece : 1<br><br>
+                      Weight(grams): 18<br><br>
+                      Base metal   : Gold<br><br>
+                      <button onclick="chainadd()">ADD TO CART</button>
+                  </div>
+                  </div>
+                  <div class="right_nav">
+                    <div class="acct_det">
+                        <h2>Hello Swetha</h2>
+                         MY ACCOUNT<br><br>
+                         MY SHOPPING CART<br><br>
+                         LOG OUT
+                    </div>
+                </div>
+            </div>
+            <script>
+                function chainadd(){
+                  location.href="cart.html";
+                  var addList=document.getElementById("cart-chainss");
+                  addList.style.display="block";
+
+                }
+
+            </script>
+    
+    
+</body>
+</html>
